@@ -2,11 +2,11 @@ import { defineConfig } from "vite";
 
 // Static, single-page marketing site. The whole site lives in index.html
 // (inline CSS + JS); assets in /public are served from the web root.
-export default defineConfig(({ command }) => ({
-  // GitHub Pages serves a project repo from https://<user>.github.io/<repo>/,
-  // so production assets must be prefixed with /<repo>/. Local dev stays at "/".
-  // If you later add a custom domain or rename the repo, update this value.
-  base: command === "build" ? "/alpha-omega-glass/" : "/",
+export default defineConfig(() => ({
+  // Served at the root of the custom domain alpha-glass-omega.fronterawebdesign.com,
+  // so assets are root-relative. (If you ever drop the custom domain and serve from
+  // https://<user>.github.io/<repo>/, change this back to "/alpha-omega-glass/".)
+  base: "/",
   root: ".",
   server: {
     port: 5173,
