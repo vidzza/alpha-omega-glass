@@ -8,7 +8,6 @@ export default defineConfig(({ command }) => ({
   // If you later add a custom domain or rename the repo, update this value.
   base: command === "build" ? "/alpha-omega-glass/" : "/",
   root: ".",
-  publicDir: "public",
   server: {
     port: 5173,
     open: true,
