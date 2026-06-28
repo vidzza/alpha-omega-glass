@@ -1,4 +1,4 @@
-# Alpha and Omega Glass Company — Website
+# Alpha and Omega Glass Company, Website
 
 Bilingual (English / Español) marketing site for **Alpha and Omega Glass Company LLC**,
 launching in Indianapolis, IN. Clean, modern, single-page design with EN/ES toggle,
@@ -7,7 +7,7 @@ dark mode, services, gallery lightbox, and a Request-a-Quote form.
 ## Tech
 
 Static single-page site (all CSS + JS inlined in `index.html`) served and built with
-[Vite](https://vitejs.dev). No framework, no runtime dependencies — just fast static output.
+[Vite](https://vitejs.dev). No framework, no runtime dependencies, just fast static output.
 
 ## Getting started
 
@@ -45,19 +45,19 @@ alpha-omega-glass/
 - **Logo:** replace `public/logo.png`.
 - **Photos:** images are currently high-quality stock placeholders pulled from Unsplash
   and are marked in the HTML with `<!-- REEMPLAZAR con foto real del cliente -->`.
-  Swap the `src` values with the client's real project photos (drop them in `public/`
-  and reference them as e.g. `/work-1.jpg`).
+  Swap the `src` values with the client's real project photos (drop them in `assets/`
+  and reference them as e.g. `./assets/work-1.jpg` so Vite bundles them).
 
 ## Still to confirm with the client
 
 Search the HTML for `REEMPLAZAR` and `CONFIRMAR` comments:
 
-- Real project photos (hero, about, services, gallery)
-- Business hours (placeholder: Mon–Fri 8:30 AM – 5:00 PM)
+- Real project photos (hero, about, services, gallery), Sergio is gathering these
 - Exact business address (map currently centers on Indianapolis generally)
 - Social media handles (Facebook / Instagram links are placeholders)
 - WhatsApp number (the float button currently uses the listed phone number)
 
 ## Contact
 
-Gabriela Uribe — gaby27flores@gmail.com — +1 (575) 805-3436
+Sergio, alphaomeglass@gmail.com, +1 (463) 332-0992
+(Account / billing contact: Gabriela Uribe)

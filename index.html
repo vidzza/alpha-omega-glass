@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alpha and Omega Glass Company LLC — Indianapolis Glass Specialists</title>
-<meta name="description" content="Alpha and Omega Glass Company — residential & commercial glass, aluminum storefronts, custom showers, repairs and replacement in Indianapolis, IN. Quality glass, from start to finish.">
+<title>Alpha and Omega Glass Company LLC, Indianapolis Glass Specialists</title>
+<meta name="description" content="Alpha and Omega Glass Company, residential & commercial glass, aluminum storefronts, custom showers, repairs and replacement in Indianapolis, IN. Quality glass, from start to finish.">
 
 <!-- Favicon: refined flat monogram (A / Ω) -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2315264d'/%3E%3Cpath d='M20 46 L32 18 L44 46' fill='none' stroke='%23c19a3e' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M25 38 L39 38' stroke='%23c19a3e' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M16 48 a16 16 0 1 1 32 0' fill='none' stroke='%23fafbfc' stroke-width='3' stroke-linecap='round' opacity='0.55'/%3E%3C/svg%3E">
@@ -328,7 +328,8 @@ body.menu-open .mobile-menu .btn { opacity: 1; }
 .about-media { position: relative; }
 .about-media img { width: 100%; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); aspect-ratio: 4/5; object-fit: cover; }
 .about-badge {
-  position: absolute; bottom: -22px; left: -10px;
+  /* Mobile: sit inside the image so the scroll-reveal clip-path can't slice it off */
+  position: absolute; bottom: 16px; left: 16px;
   background: var(--color-navy); color: #fff; padding: 1.1rem 1.4rem; border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg); max-width: 220px;
 }
@@ -600,6 +601,8 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
   .hamburger { display: none; }
   .gallery-grid { columns: 3; }
   .about-grid { grid-template-columns: 1.2fr 1fr; }
+  /* Desktop has a taller text column, so the badge can overhang without being clipped */
+  .about-badge { bottom: -22px; left: -10px; }
   .quote-grid { grid-template-columns: 0.9fr 1.1fr; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
   .footer-top { grid-template-columns: 1.3fr 2fr; align-items: start; }
@@ -621,9 +624,9 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
 <!-- ============================================================ HEADER ============================================================ -->
 <header class="site-header" id="siteHeader">
   <div class="wrap nav">
-    <a href="#home" class="brand" aria-label="Alpha and Omega Glass Company — Home">
+    <a href="#home" class="brand" aria-label="Alpha and Omega Glass Company, Home">
       <!-- Cliente proporcionó este logo; se usa tal cual -->
-      <img class="brand-logo" src="/logo.png" alt="Alpha and Omega Glass Company logo">
+      <img class="brand-logo" src="./assets/logo.png" alt="Alpha and Omega Glass Company logo">
       <span class="brand-word">
         <span class="b1">Alpha &amp; Omega</span>
         <span class="b2">Glass Company</span>
@@ -675,7 +678,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
   <div class="wrap hero-inner">
     <span class="eyebrow hero-anim" data-i18n="hero.eyebrow">Indianapolis Glass Specialists</span>
     <h1 class="hero-anim d1" data-i18n-html="hero.title">Quality Glass, From <i>Start</i> to Finish</h1>
-    <p class="hero-sub hero-anim d2" data-i18n="hero.sub">Residential and commercial glass, installed with craft and care. New to Indianapolis — built on family roots from El Paso and Las Cruces.</p>
+    <p class="hero-sub hero-anim d2" data-i18n="hero.sub">Residential and commercial glass, installed with craft and care. Now serving Indianapolis, backed by over 25 years of Texas glass experience.</p>
     <div class="hero-actions hero-anim d3">
       <a href="#quote" class="btn btn-primary" data-i18n="hero.cta1">Request a Quote</a>
       <a href="#gallery" class="btn btn-ghost-light" data-i18n="hero.cta2">View Our Work</a>
@@ -693,12 +696,12 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
     <div class="about-copy">
       <span class="eyebrow" data-i18n="about.eyebrow">Our Story</span>
       <h2 class="section-head" style="margin-bottom:0; font-size:var(--text-2xl); color:var(--color-text)" data-i18n="about.title">A new name in Indianapolis glass, built on family craft</h2>
-      <p data-i18n="about.p1">Alpha and Omega Glass Company is opening its doors in Indianapolis with a simple promise: glass work done right, from the first measurement to the final seal. Our owners bring family roots and years of hands-on experience from El Paso and Las Cruces.</p>
-      <p data-i18n="about.p2">From homes to storefronts, we handle every project with personal attention — clear communication, clean installation, and lasting results. Whether it's a custom shower enclosure or a full aluminum storefront, we treat your space like our own.</p>
+      <p data-i18n="about.p1">Alpha and Omega Glass Company is opening its doors in Indianapolis with a simple promise: glass work done right, from the first measurement to the final seal. Originally from Texas, our owners bring more than 25 years of hands-on experience to every project.</p>
+      <p data-i18n="about.p2">From homes to storefronts, we handle every project with personal attention, clear communication, clean installation, and lasting results. Whether it's a custom shower enclosure or a full aluminum storefront, we treat your space like our own.</p>
       <div class="stats">
-        <div class="stat"><div class="num" data-count="7" data-suffix="">0</div><div class="label" data-i18n="about.stat1">Specialized Services</div></div>
-        <div class="stat"><div class="num" data-count="2" data-suffix="">0</div><div class="label" data-i18n="about.stat2">States Served</div></div>
-        <div class="stat"><div class="num" data-count="100" data-suffix="%">0</div><div class="label" data-i18n="about.stat3">Satisfaction Focus</div></div>
+        <div class="stat"><div class="num" data-count="25" data-suffix="+">0</div><div class="label" data-i18n="about.stat1">Years of Experience</div></div>
+        <div class="stat"><div class="num" data-count="6" data-suffix="">0</div><div class="label" data-i18n="about.stat2">Specialized Services</div></div>
+        <div class="stat"><div class="num" data-count="2" data-suffix="">0</div><div class="label" data-i18n="about.stat3">States Served</div></div>
         <div class="stat"><div class="num" data-count="24" data-suffix="h">0</div><div class="label" data-i18n="about.stat4">Quote Response</div></div>
       </div>
     </div>
@@ -706,8 +709,8 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       <!-- REEMPLAZAR con foto real del cliente (equipo / instalación) -->
       <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Craftsman installing a large glass panel on a residential project">
       <div class="about-badge">
-        <div class="bw" data-i18n="about.badgeNum">Est. 2026</div>
-        <div class="bs" data-i18n="about.badgeText">Serving Indianapolis &amp; beyond</div>
+        <div class="bw" data-i18n="about.badgeNum">25+ Years</div>
+        <div class="bs" data-i18n="about.badgeText">of trusted glass experience</div>
       </div>
     </div>
   </div>
@@ -725,12 +728,12 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       <article class="why-card">
         <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg></div>
         <h3 data-i18n="why.1.t">Family-Owned &amp; Operated</h3>
-        <p data-i18n="why.1.d">Roots in El Paso and Las Cruces, now serving Indianapolis with the same personal care.</p>
+        <p data-i18n="why.1.d">Texas roots and 25+ years of experience, now serving Indianapolis with the same personal care.</p>
       </article>
       <article class="why-card">
         <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg></div>
         <h3 data-i18n="why.2.t">Bilingual Service</h3>
-        <p data-i18n="why.2.d">We work fluently in English and Spanish — clear communication from first quote to final install.</p>
+        <p data-i18n="why.2.d">We work fluently in English and Spanish, clear communication from first quote to final install.</p>
       </article>
       <article class="why-card">
         <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-6 0v4M5 9h14l1 12H4L5 9z"/></svg></div>
@@ -740,7 +743,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       <article class="why-card">
         <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
         <h3 data-i18n="why.4.t">Quality Workmanship</h3>
-        <p data-i18n="why.4.d">Clean, precise installation backed by hands-on experience — done right the first time.</p>
+        <p data-i18n="why.4.d">Clean, precise installation backed by hands-on experience, done right the first time.</p>
       </article>
     </div>
   </div>
@@ -752,7 +755,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
     <div class="section-head fade-in-view">
       <span class="eyebrow" data-i18n="svc.eyebrow">What We Do</span>
       <h2 data-i18n="svc.title">Glass services, end to end</h2>
-      <p class="lead" data-i18n="svc.lead">Seven core specialties covering every glass need — residential, commercial, and everything in between.</p>
+      <p class="lead" data-i18n="svc.lead">Six core specialties covering every glass need, residential, commercial, and everything in between.</p>
     </div>
 
     <div class="svc-grid fade-in-view">
@@ -762,7 +765,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
         <span class="svc-num">01</span>
         <h3 data-i18n="svc.1.t">Residential Glass</h3>
         <span class="svc-es" data-i18n="svc.1.s">Vidrio Residencial</span>
-        <p data-i18n="svc.1.d">Windows, mirrors, tabletops and more — crafted to fit your home perfectly.</p>
+        <p data-i18n="svc.1.d">Windows, mirrors, tabletops and more, crafted to fit your home perfectly.</p>
       </article>
       <!-- 02 Commercial -->
       <article class="svc-card">
@@ -776,41 +779,33 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       <article class="svc-card">
         <div class="svc-bg"><!-- REEMPLAZAR con foto real --><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80" alt="Aluminum framed glass storefront"></div>
         <span class="svc-num">03</span>
-        <h3 data-i18n="svc.3.t">Aluminum Storefronts</h3>
-        <span class="svc-es" data-i18n="svc.3.s">Fachadas de Aluminio</span>
-        <p data-i18n="svc.3.d">Sleek aluminum-framed storefronts that make a clean, professional first impression.</p>
+        <h3 data-i18n="svc.3.t">Aluminum Storefronts &amp; Curtain Walls</h3>
+        <span class="svc-es" data-i18n="svc.3.s">Fachadas de Aluminio y Muros Cortina</span>
+        <p data-i18n="svc.3.d">Sleek aluminum-framed storefronts and curtain walls that make a clean, professional first impression.</p>
       </article>
-      <!-- 04 Repairs -->
-      <article class="svc-card">
-        <div class="svc-bg"><!-- REEMPLAZAR con foto real --><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="Technician repairing glass"></div>
-        <span class="svc-num">04</span>
-        <h3 data-i18n="svc.4.t">Glass Repairs</h3>
-        <span class="svc-es" data-i18n="svc.4.s">Reparación de Vidrio</span>
-        <p data-i18n="svc.4.d">Fast, reliable repairs that restore safety and clarity to damaged glass.</p>
-      </article>
-      <!-- 05 Replacement -->
+      <!-- 04 Broken Glass Replacement -->
       <article class="svc-card">
         <div class="svc-bg"><!-- REEMPLAZAR con foto real --><img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&w=900&q=80" alt="Replacing a broken pane of glass"></div>
-        <span class="svc-num">05</span>
+        <span class="svc-num">04</span>
         <h3 data-i18n="svc.5.t">Broken Glass Replacement</h3>
         <span class="svc-es" data-i18n="svc.5.s">Reemplazo de Vidrio Roto</span>
-        <p data-i18n="svc.5.d">Broken pane? We replace it quickly with a perfect, secure fit.</p>
+        <p data-i18n="svc.5.d">Broken glass or a broken window? We replace it quickly with a perfect, secure fit.</p>
       </article>
-      <!-- 06 Showers -->
+      <!-- 05 Showers -->
       <article class="svc-card">
         <div class="svc-bg"><!-- REEMPLAZAR con foto real --><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=80" alt="Custom frameless glass shower enclosure"></div>
-        <span class="svc-num">06</span>
+        <span class="svc-num">05</span>
         <h3 data-i18n="svc.6.t">Custom Showers</h3>
         <span class="svc-es" data-i18n="svc.6.s">Duchas a Medida</span>
         <p data-i18n="svc.6.d">Frameless and semi-frameless shower enclosures designed to your exact space.</p>
       </article>
-      <!-- 07 Door Closers -->
+      <!-- 06 Door Closers & Thresholds -->
       <article class="svc-card">
         <div class="svc-bg"><!-- REEMPLAZAR con foto real --><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Commercial glass door with closer hardware"></div>
-        <span class="svc-num">07</span>
-        <h3 data-i18n="svc.7.t">Door Closers</h3>
-        <span class="svc-es" data-i18n="svc.7.s">Cierrapuertas</span>
-        <p data-i18n="svc.7.d">Installation and repair of door closers for smooth, safe, controlled doors.</p>
+        <span class="svc-num">06</span>
+        <h3 data-i18n="svc.7.t">Door Closers &amp; Thresholds</h3>
+        <span class="svc-es" data-i18n="svc.7.s">Cierrapuertas y Umbrales</span>
+        <p data-i18n="svc.7.d">Installation and repair of door closers and threshold replacements for smooth, safe, sealed doorways.</p>
       </article>
     </div>
   </div>
@@ -822,7 +817,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
     <div class="section-head fade-in-view">
       <span class="eyebrow" data-i18n="process.eyebrow">How It Works</span>
       <h2 data-i18n="process.title">Simple from start to finish</h2>
-      <p class="lead" data-i18n="process.lead">Three clear steps — no surprises, no pressure, just quality glass installed on schedule.</p>
+      <p class="lead" data-i18n="process.lead">Three clear steps, no surprises, no pressure, just quality glass installed on schedule.</p>
     </div>
     <div class="process-grid fade-in-view">
       <div class="step">
@@ -838,7 +833,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       <div class="step">
         <div class="step-num">03</div>
         <h3 data-i18n="process.3.t">Expert Installation</h3>
-        <p data-i18n="process.3.d">Our team installs your glass cleanly and on schedule — and leaves your space spotless.</p>
+        <p data-i18n="process.3.d">Our team installs your glass cleanly and on schedule, and leaves your space spotless.</p>
       </div>
     </div>
   </div>
@@ -915,7 +910,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
     <div class="faq-list fade-in-view">
       <details class="faq-item">
         <summary><span data-i18n="faq.q1">What areas do you serve?</span><svg class="faq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <p class="faq-a" data-i18n="faq.a1">We're launching in Indianapolis, IN and serving the surrounding areas. Our family's roots are in El Paso and Las Cruces, with plans to expand there in the future.</p>
+        <p class="faq-a" data-i18n="faq.a1">We're launching in Indianapolis, IN and serving the surrounding areas. Our family's roots and 25+ years of experience come from Texas.</p>
       </details>
       <details class="faq-item">
         <summary><span data-i18n="faq.q2">Do you offer free estimates?</span><svg class="faq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
@@ -923,11 +918,11 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       </details>
       <details class="faq-item">
         <summary><span data-i18n="faq.q3">Do you handle both residential and commercial work?</span><svg class="faq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <p class="faq-a" data-i18n="faq.a3">Absolutely. From home windows, mirrors and custom showers to commercial glass, aluminum storefronts and door closers — we cover the full range.</p>
+        <p class="faq-a" data-i18n="faq.a3">Absolutely. From home windows, mirrors and custom showers to commercial glass, aluminum storefronts, curtain walls, door closers and thresholds, we cover the full range.</p>
       </details>
       <details class="faq-item">
         <summary><span data-i18n="faq.q4">Do you speak Spanish?</span><svg class="faq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <p class="faq-a" data-i18n="faq.a4">Yes — we're fully bilingual. You can work with us in English or Spanish at every step, from the first call to the finished install.</p>
+        <p class="faq-a" data-i18n="faq.a4">Yes, we're fully bilingual. You can work with us in English or Spanish at every step, from the first call to the finished install.</p>
       </details>
       <details class="faq-item">
         <summary><span data-i18n="faq.q5">How quickly can you respond?</span><svg class="faq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
@@ -947,7 +942,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       <ul class="quote-perks">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="quote.perk1">Free, no-obligation estimates</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="quote.perk2">Residential &amp; commercial projects</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="quote.perk3">Bilingual service — English &amp; Español</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="quote.perk3">Bilingual service, English &amp; Español</span></li>
       </ul>
     </div>
 
@@ -987,11 +982,11 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
               <option value="" data-i18n="quote.servicePh">Select a service…</option>
               <option value="residential" data-i18n="svc.1.t">Residential Glass</option>
               <option value="commercial" data-i18n="svc.2.t">Commercial Glass</option>
-              <option value="storefront" data-i18n="svc.3.t">Aluminum Storefronts</option>
-              <option value="repair" data-i18n="svc.4.t">Glass Repairs</option>
+              <option value="storefront" data-i18n="svc.3.t">Aluminum Storefronts &amp; Curtain Walls</option>
               <option value="replacement" data-i18n="svc.5.t">Broken Glass Replacement</option>
               <option value="shower" data-i18n="svc.6.t">Custom Showers</option>
-              <option value="closer" data-i18n="svc.7.t">Door Closers</option>
+              <option value="closer" data-i18n="svc.7.t">Door Closers &amp; Thresholds</option>
+              <option value="mirrors" data-i18n="svc.mirrors">Mirrors</option>
             </select>
             <span class="field-error" data-i18n="quote.errService">Please choose a service.</span>
           </div>
@@ -1021,8 +1016,8 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
         <h3 data-i18n="quote.successT">Thank you!</h3>
         <p data-i18n="quote.successP">We've received your request and we'll get back to you within 24 hours.</p>
         <div class="success-cta">
-          <a href="tel:15758053436" class="btn btn-primary" data-i18n="quote.successCall">Call Us Now</a>
-          <a href="mailto:gaby27flores@gmail.com" class="btn btn-ghost" data-i18n="quote.successEmail">Email Us</a>
+          <a href="tel:14633320992" class="btn btn-primary" data-i18n="quote.successCall">Call Us Now</a>
+          <a href="mailto:alphaomeglass@gmail.com" class="btn btn-ghost" data-i18n="quote.successEmail">Email Us</a>
         </div>
       </div>
     </div>
@@ -1037,12 +1032,16 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       <h2 data-i18n="contact.title">Let's talk about your glass</h2>
       <ul class="contact-list">
         <li>
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+          <div><div class="ck" data-i18n="contact.personK">Contact</div><span class="cv" data-i18n="contact.personV">Sergio</span></div>
+        </li>
+        <li>
           <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-          <div><div class="ck" data-i18n="contact.phoneK">Phone</div><a class="cv" href="tel:15758053436">+1 (575) 805-3436</a></div>
+          <div><div class="ck" data-i18n="contact.phoneK">Phone</div><a class="cv" href="tel:14633320992">+1 (463) 332-0992</a></div>
         </li>
         <li>
           <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
-          <div><div class="ck" data-i18n="contact.emailK">Email</div><a class="cv" href="mailto:gaby27flores@gmail.com">gaby27flores@gmail.com</a></div>
+          <div><div class="ck" data-i18n="contact.emailK">Email</div><a class="cv" href="mailto:alphaomeglass@gmail.com">alphaomeglass@gmail.com</a></div>
         </li>
         <li>
           <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
@@ -1050,18 +1049,18 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
         </li>
         <li>
           <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
-          <div><div class="ck" data-i18n="contact.hoursK">Hours</div><span class="cv" data-i18n="contact.hoursV">Mon–Fri 8:30 AM – 5:00 PM</span></div>
+          <div><div class="ck" data-i18n="contact.hoursK">Hours</div><span class="cv" data-i18n="contact.hoursV">Mon–Sat 8:30 AM – 5:00 PM</span></div>
         </li>
       </ul>
       <div class="contact-socials">
         <!-- Confirmar redes con cliente -->
         <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
         <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-        <a href="tel:15758053436" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="tel:14633320992" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
       </div>
     </div>
     <div class="contact-map">
-      <!-- Confirmar dirección exacta con cliente — mapa muestra Indianapolis -->
+      <!-- Confirmar dirección exacta con cliente, mapa muestra Indianapolis -->
       <iframe title="Map of Indianapolis service area" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Indianapolis,+IN&output=embed"></iframe>
     </div>
   </div>
@@ -1073,7 +1072,7 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="/logo.png" alt="Alpha and Omega Glass Company logo">
+        <img src="./assets/logo.png" alt="Alpha and Omega Glass Company logo">
         <p class="footer-tag" data-i18n="footer.tag">Quality glass, from start to finish.</p>
       </div>
       <div class="footer-cols">
@@ -1098,8 +1097,8 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
         <div class="footer-col">
           <h4 data-i18n="footer.contact">Contact</h4>
           <ul>
-            <li><a href="tel:15758053436">+1 (575) 805-3436</a></li>
-            <li><a href="mailto:gaby27flores@gmail.com">gaby27flores@gmail.com</a></li>
+            <li><a href="tel:14633320992">+1 (463) 332-0992</a></li>
+            <li><a href="mailto:alphaomeglass@gmail.com">alphaomeglass@gmail.com</a></li>
             <li data-i18n="contact.areaV">Indianapolis, IN &amp; surrounding areas</li>
           </ul>
         </div>
@@ -1114,14 +1113,14 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
 
 <!-- ============================================================ FLOATING ============================================================ -->
 <div class="floats">
-  <!-- WhatsApp: usa el número de teléfono dado — CONFIRMAR con cliente que es WhatsApp -->
-  <a href="https://wa.me/15758053436" target="_blank" rel="noopener" class="float-btn whatsapp" aria-label="WhatsApp us">
+  <!-- WhatsApp: usa el número de teléfono dado, CONFIRMAR con cliente que es WhatsApp -->
+  <a href="https://wa.me/14633320992" target="_blank" rel="noopener" class="float-btn whatsapp" aria-label="WhatsApp us">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.74-.86-2-.96-.27-.1-.46-.15-.65.15-.2.29-.75.95-.92 1.15-.17.19-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.34.45-.51.15-.17.2-.29.3-.48.1-.2.05-.36-.02-.51-.08-.15-.65-1.58-.9-2.16-.24-.57-.48-.49-.65-.5l-.56-.01c-.19 0-.5.07-.77.36-.26.29-1 .98-1 2.4 0 1.41 1.03 2.78 1.17 2.97.14.19 2.02 3.08 4.9 4.32.68.3 1.21.47 1.63.6.69.22 1.31.19 1.8.12.55-.08 1.74-.71 1.98-1.4.25-.69.25-1.28.17-1.4-.07-.13-.26-.2-.56-.35zM12.04 21.5h-.01a9.45 9.45 0 0 1-4.82-1.32l-.35-.2-3.58.94.96-3.5-.23-.36a9.45 9.45 0 0 1-1.45-5.03c0-5.22 4.25-9.47 9.48-9.47 2.53 0 4.9.99 6.69 2.78a9.4 9.4 0 0 1 2.77 6.7c0 5.22-4.25 9.46-9.48 9.46zM20.52 3.49A11.78 11.78 0 0 0 12.04 0C5.5 0 .18 5.32.18 11.86c0 2.09.55 4.13 1.59 5.93L.08 24l6.37-1.67a11.83 11.83 0 0 0 5.59 1.42h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.24-6.15-3.39-8.4z"/></svg>
   </a>
-  <a href="tel:15758053436" class="float-btn phone" aria-label="Call us">
+  <a href="tel:14633320992" class="float-btn phone" aria-label="Call us">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
   </a>
-  <a href="mailto:gaby27flores@gmail.com" class="float-btn email" aria-label="Email us">
+  <a href="mailto:alphaomeglass@gmail.com" class="float-btn email" aria-label="Email us">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
   </a>
 </div>
@@ -1136,42 +1135,42 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       "nav.home": "Home", "nav.about": "About", "nav.services": "Services", "nav.gallery": "Gallery", "nav.contact": "Contact", "nav.quote": "Request a Quote",
       "hero.eyebrow": "Indianapolis Glass Specialists",
       "hero.title": "Quality Glass, From <i>Start</i> to Finish",
-      "hero.sub": "Residential and commercial glass, installed with craft and care. New to Indianapolis — built on family roots from El Paso and Las Cruces.",
+      "hero.sub": "Residential and commercial glass, installed with craft and care. Now serving Indianapolis, backed by over 25 years of Texas glass experience.",
       "hero.cta1": "Request a Quote", "hero.cta2": "View Our Work", "hero.scroll": "Scroll",
       "about.eyebrow": "Our Story",
       "about.title": "A new name in Indianapolis glass, built on family craft",
-      "about.p1": "Alpha and Omega Glass Company is opening its doors in Indianapolis with a simple promise: glass work done right, from the first measurement to the final seal. Our owners bring family roots and years of hands-on experience from El Paso and Las Cruces.",
-      "about.p2": "From homes to storefronts, we handle every project with personal attention — clear communication, clean installation, and lasting results. Whether it's a custom shower enclosure or a full aluminum storefront, we treat your space like our own.",
-      "about.stat1": "Specialized Services", "about.stat2": "States Served", "about.stat3": "Satisfaction Focus", "about.stat4": "Quote Response",
-      "about.badgeNum": "Est. 2026", "about.badgeText": "Serving Indianapolis & beyond",
+      "about.p1": "Alpha and Omega Glass Company is opening its doors in Indianapolis with a simple promise: glass work done right, from the first measurement to the final seal. Originally from Texas, our owners bring more than 25 years of hands-on experience to every project.",
+      "about.p2": "From homes to storefronts, we handle every project with personal attention, clear communication, clean installation, and lasting results. Whether it's a custom shower enclosure or a full aluminum storefront, we treat your space like our own.",
+      "about.stat1": "Years of Experience", "about.stat2": "Specialized Services", "about.stat3": "States Served", "about.stat4": "Quote Response",
+      "about.badgeNum": "25+ Years", "about.badgeText": "of trusted glass experience",
       "svc.eyebrow": "What We Do", "svc.title": "Glass services, end to end",
-      "svc.lead": "Seven core specialties covering every glass need — residential, commercial, and everything in between.",
-      "svc.1.t": "Residential Glass", "svc.1.s": "Vidrio Residencial", "svc.1.d": "Windows, mirrors, tabletops and more — crafted to fit your home perfectly.",
+      "svc.lead": "Six core specialties covering every glass need, residential, commercial, and everything in between.",
+      "svc.1.t": "Residential Glass", "svc.1.s": "Vidrio Residencial", "svc.1.d": "Windows, mirrors, tabletops and more, crafted to fit your home perfectly.",
       "svc.2.t": "Commercial Glass", "svc.2.s": "Vidrio Comercial", "svc.2.d": "Durable, code-compliant glass solutions for offices, retail and businesses.",
-      "svc.3.t": "Aluminum Storefronts", "svc.3.s": "Fachadas de Aluminio", "svc.3.d": "Sleek aluminum-framed storefronts that make a clean, professional first impression.",
-      "svc.4.t": "Glass Repairs", "svc.4.s": "Reparación de Vidrio", "svc.4.d": "Fast, reliable repairs that restore safety and clarity to damaged glass.",
-      "svc.5.t": "Broken Glass Replacement", "svc.5.s": "Reemplazo de Vidrio Roto", "svc.5.d": "Broken pane? We replace it quickly with a perfect, secure fit.",
+      "svc.3.t": "Aluminum Storefronts & Curtain Walls", "svc.3.s": "Fachadas de Aluminio y Muros Cortina", "svc.3.d": "Sleek aluminum-framed storefronts and curtain walls that make a clean, professional first impression.",
+      "svc.5.t": "Broken Glass Replacement", "svc.5.s": "Reemplazo de Vidrio Roto", "svc.5.d": "Broken glass or a broken window? We replace it quickly with a perfect, secure fit.",
       "svc.6.t": "Custom Showers", "svc.6.s": "Duchas a Medida", "svc.6.d": "Frameless and semi-frameless shower enclosures designed to your exact space.",
-      "svc.7.t": "Door Closers", "svc.7.s": "Cierrapuertas", "svc.7.d": "Installation and repair of door closers for smooth, safe, controlled doors.",
+      "svc.7.t": "Door Closers & Thresholds", "svc.7.s": "Cierrapuertas y Umbrales", "svc.7.d": "Installation and repair of door closers and threshold replacements for smooth, safe, sealed doorways.",
+      "svc.mirrors": "Mirrors",
       "gal.eyebrow": "Our Work", "gal.title": "A clearer kind of craftsmanship", "gal.lead": "A look at the quality and detail we bring to every glass project.",
       "why.eyebrow": "Why Alpha & Omega", "why.title": "A name you can build on", "why.lead": "New to Indianapolis, but grounded in family craft and a simple standard: do it right, every time.",
-      "why.1.t": "Family-Owned & Operated", "why.1.d": "Roots in El Paso and Las Cruces, now serving Indianapolis with the same personal care.",
-      "why.2.t": "Bilingual Service", "why.2.d": "We work fluently in English and Spanish — clear communication from first quote to final install.",
+      "why.1.t": "Family-Owned & Operated", "why.1.d": "Texas roots and 25+ years of experience, now serving Indianapolis with the same personal care.",
+      "why.2.t": "Bilingual Service", "why.2.d": "We work fluently in English and Spanish, clear communication from first quote to final install.",
       "why.3.t": "Free Estimates", "why.3.d": "Honest, no-obligation quotes. You'll know the cost up front, before any work begins.",
-      "why.4.t": "Quality Workmanship", "why.4.d": "Clean, precise installation backed by hands-on experience — done right the first time.",
-      "process.eyebrow": "How It Works", "process.title": "Simple from start to finish", "process.lead": "Three clear steps — no surprises, no pressure, just quality glass installed on schedule.",
+      "why.4.t": "Quality Workmanship", "why.4.d": "Clean, precise installation backed by hands-on experience, done right the first time.",
+      "process.eyebrow": "How It Works", "process.title": "Simple from start to finish", "process.lead": "Three clear steps, no surprises, no pressure, just quality glass installed on schedule.",
       "process.1.t": "Request a Quote", "process.1.d": "Reach out by phone, email, or the quote form and tell us what you need. We respond within 24 hours.",
       "process.2.t": "Measure & Estimate", "process.2.d": "We assess your space, take precise measurements, and give you a clear, honest estimate.",
-      "process.3.t": "Expert Installation", "process.3.d": "Our team installs your glass cleanly and on schedule — and leaves your space spotless.",
+      "process.3.t": "Expert Installation", "process.3.d": "Our team installs your glass cleanly and on schedule, and leaves your space spotless.",
       "faq.eyebrow": "Good to Know", "faq.title": "Frequently asked questions",
-      "faq.q1": "What areas do you serve?", "faq.a1": "We're launching in Indianapolis, IN and serving the surrounding areas. Our family's roots are in El Paso and Las Cruces, with plans to expand there in the future.",
+      "faq.q1": "What areas do you serve?", "faq.a1": "We're launching in Indianapolis, IN and serving the surrounding areas. Our family's roots and 25+ years of experience come from Texas.",
       "faq.q2": "Do you offer free estimates?", "faq.a2": "Yes. Every quote is free and comes with no obligation. Send us your project details and we'll get back to you within 24 hours.",
-      "faq.q3": "Do you handle both residential and commercial work?", "faq.a3": "Absolutely. From home windows, mirrors and custom showers to commercial glass, aluminum storefronts and door closers — we cover the full range.",
-      "faq.q4": "Do you speak Spanish?", "faq.a4": "Yes — we're fully bilingual. You can work with us in English or Spanish at every step, from the first call to the finished install.",
+      "faq.q3": "Do you handle both residential and commercial work?", "faq.a3": "Absolutely. From home windows, mirrors and custom showers to commercial glass, aluminum storefronts, curtain walls, door closers and thresholds, we cover the full range.",
+      "faq.q4": "Do you speak Spanish?", "faq.a4": "Yes, we're fully bilingual. You can work with us in English or Spanish at every step, from the first call to the finished install.",
       "faq.q5": "How quickly can you respond?", "faq.a5": "We reply to every quote request within 24 hours. For urgent repairs or broken glass, call us directly and we'll do our best to help right away.",
       "quote.eyebrow": "Free Estimate", "quote.title": "Request a quote",
       "quote.sub": "Tell us about your project and we'll get back to you within 24 hours with a clear, honest estimate.",
-      "quote.perk1": "Free, no-obligation estimates", "quote.perk2": "Residential & commercial projects", "quote.perk3": "Bilingual service — English & Español",
+      "quote.perk1": "Free, no-obligation estimates", "quote.perk2": "Residential & commercial projects", "quote.perk3": "Bilingual service, English & Español",
       "quote.name": "Full Name", "quote.namePh": "Jane Doe", "quote.errName": "Please enter your name.",
       "quote.phone": "Phone", "quote.phonePh": "(317) 555-0123", "quote.errPhone": "Please enter a valid phone.",
       "quote.email": "Email", "quote.emailPh": "jane@email.com", "quote.errEmail": "Please enter a valid email.",
@@ -1182,8 +1181,9 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       "quote.successT": "Thank you!", "quote.successP": "We've received your request and we'll get back to you within 24 hours.",
       "quote.successCall": "Call Us Now", "quote.successEmail": "Email Us",
       "contact.eyebrow": "Get In Touch", "contact.title": "Let's talk about your glass",
+      "contact.personK": "Contact", "contact.personV": "Sergio",
       "contact.phoneK": "Phone", "contact.emailK": "Email", "contact.areaK": "Service Area", "contact.areaV": "Indianapolis, IN & surrounding areas",
-      "contact.hoursK": "Hours", "contact.hoursV": "Mon–Fri 8:30 AM – 5:00 PM",
+      "contact.hoursK": "Hours", "contact.hoursV": "Mon–Sat 8:30 AM – 5:00 PM",
       "footer.tag": "Quality glass, from start to finish.",
       "footer.explore": "Explore", "footer.services": "Services", "footer.contact": "Contact",
       "footer.rights": "All rights reserved.", "footer.motto": "Designed for clarity. Built to last."
@@ -1192,42 +1192,42 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       "nav.home": "Inicio", "nav.about": "Nosotros", "nav.services": "Servicios", "nav.gallery": "Galería", "nav.contact": "Contacto", "nav.quote": "Solicitar Cotización",
       "hero.eyebrow": "Especialistas en Vidrio de Indianapolis",
       "hero.title": "Calidad en Vidrio, de <i>Principio</i> a Fin",
-      "hero.sub": "Vidrio residencial y comercial, instalado con oficio y cuidado. Nuevos en Indianapolis — con raíces familiares de El Paso y Las Cruces.",
+      "hero.sub": "Vidrio residencial y comercial, instalado con oficio y cuidado. Ahora atendiendo Indianapolis, con más de 25 años de experiencia en vidrio desde Texas.",
       "hero.cta1": "Solicitar Cotización", "hero.cta2": "Ver Nuestro Trabajo", "hero.scroll": "Desliza",
       "about.eyebrow": "Nuestra Historia",
       "about.title": "Un nuevo nombre en vidrio en Indianapolis, con oficio familiar",
-      "about.p1": "Alpha and Omega Glass Company abre sus puertas en Indianapolis con una promesa sencilla: trabajo en vidrio bien hecho, desde la primera medición hasta el sellado final. Nuestros dueños traen raíces familiares y años de experiencia práctica de El Paso y Las Cruces.",
-      "about.p2": "De casas a fachadas comerciales, atendemos cada proyecto con atención personalizada — comunicación clara, instalación limpia y resultados duraderos. Ya sea una ducha a medida o una fachada completa de aluminio, tratamos su espacio como propio.",
-      "about.stat1": "Servicios Especializados", "about.stat2": "Estados Atendidos", "about.stat3": "Enfoque en Satisfacción", "about.stat4": "Respuesta a Cotización",
-      "about.badgeNum": "Desde 2026", "about.badgeText": "Atendiendo Indianapolis y más allá",
+      "about.p1": "Alpha and Omega Glass Company abre sus puertas en Indianapolis con una promesa sencilla: trabajo en vidrio bien hecho, desde la primera medición hasta el sellado final. Originarios de Texas, nuestros dueños aportan más de 25 años de experiencia práctica a cada proyecto.",
+      "about.p2": "De casas a fachadas comerciales, atendemos cada proyecto con atención personalizada, comunicación clara, instalación limpia y resultados duraderos. Ya sea una ducha a medida o una fachada completa de aluminio, tratamos su espacio como propio.",
+      "about.stat1": "Años de Experiencia", "about.stat2": "Servicios Especializados", "about.stat3": "Estados Atendidos", "about.stat4": "Respuesta a Cotización",
+      "about.badgeNum": "Más de 25 Años", "about.badgeText": "de experiencia en vidrio",
       "svc.eyebrow": "Lo Que Hacemos", "svc.title": "Servicios de vidrio, de principio a fin",
-      "svc.lead": "Siete especialidades centrales que cubren toda necesidad de vidrio — residencial, comercial y todo lo intermedio.",
-      "svc.1.t": "Vidrio Residencial", "svc.1.s": "Residential Glass", "svc.1.d": "Ventanas, espejos, cubiertas y más — hechos a la medida de su hogar.",
+      "svc.lead": "Seis especialidades centrales que cubren toda necesidad de vidrio, residencial, comercial y todo lo intermedio.",
+      "svc.1.t": "Vidrio Residencial", "svc.1.s": "Residential Glass", "svc.1.d": "Ventanas, espejos, cubiertas y más, hechos a la medida de su hogar.",
       "svc.2.t": "Vidrio Comercial", "svc.2.s": "Commercial Glass", "svc.2.d": "Soluciones de vidrio duraderas y conforme a normativa para oficinas, comercios y negocios.",
-      "svc.3.t": "Fachadas de Aluminio", "svc.3.s": "Aluminum Storefronts", "svc.3.d": "Fachadas elegantes con marco de aluminio que dan una primera impresión limpia y profesional.",
-      "svc.4.t": "Reparación de Vidrio", "svc.4.s": "Glass Repairs", "svc.4.d": "Reparaciones rápidas y confiables que devuelven seguridad y claridad al vidrio dañado.",
-      "svc.5.t": "Reemplazo de Vidrio Roto", "svc.5.s": "Broken Glass Replacement", "svc.5.d": "¿Vidrio roto? Lo reemplazamos rápido con un ajuste perfecto y seguro.",
+      "svc.3.t": "Fachadas de Aluminio y Muros Cortina", "svc.3.s": "Aluminum Storefronts & Curtain Walls", "svc.3.d": "Fachadas con marco de aluminio y muros cortina que dan una primera impresión limpia y profesional.",
+      "svc.5.t": "Reemplazo de Vidrio Roto", "svc.5.s": "Broken Glass Replacement", "svc.5.d": "¿Vidrio o ventana rota? La reemplazamos rápido con un ajuste perfecto y seguro.",
       "svc.6.t": "Duchas a Medida", "svc.6.s": "Custom Showers", "svc.6.d": "Cabinas de ducha sin marco y semi-sin marco diseñadas a la medida de su espacio.",
-      "svc.7.t": "Cierrapuertas", "svc.7.s": "Door Closers", "svc.7.d": "Instalación y reparación de cierrapuertas para puertas suaves, seguras y controladas.",
+      "svc.7.t": "Cierrapuertas y Umbrales", "svc.7.s": "Door Closers & Thresholds", "svc.7.d": "Instalación y reparación de cierrapuertas y reemplazo de umbrales para puertas suaves, seguras y bien selladas.",
+      "svc.mirrors": "Espejos",
       "gal.eyebrow": "Nuestro Trabajo", "gal.title": "Una forma más clara de hacer las cosas", "gal.lead": "Un vistazo a la calidad y el detalle que aportamos a cada proyecto de vidrio.",
       "why.eyebrow": "Por Qué Alpha & Omega", "why.title": "Un nombre en el que puedes confiar", "why.lead": "Nuevos en Indianapolis, pero con bases en el oficio familiar y un estándar sencillo: hacerlo bien, siempre.",
-      "why.1.t": "Familiar y Operado por sus Dueños", "why.1.d": "Raíces en El Paso y Las Cruces, ahora atendiendo Indianapolis con la misma atención personal.",
-      "why.2.t": "Servicio Bilingüe", "why.2.d": "Trabajamos con fluidez en inglés y español — comunicación clara desde la cotización hasta la instalación.",
+      "why.1.t": "Familiar y Operado por sus Dueños", "why.1.d": "Raíces en Texas y más de 25 años de experiencia, ahora atendiendo Indianapolis con la misma atención personal.",
+      "why.2.t": "Servicio Bilingüe", "why.2.d": "Trabajamos con fluidez en inglés y español, comunicación clara desde la cotización hasta la instalación.",
       "why.3.t": "Estimados Gratis", "why.3.d": "Cotizaciones honestas y sin compromiso. Conocerás el costo por adelantado, antes de comenzar.",
-      "why.4.t": "Trabajo de Calidad", "why.4.d": "Instalación limpia y precisa, respaldada por experiencia práctica — bien hecho desde la primera vez.",
-      "process.eyebrow": "Cómo Funciona", "process.title": "Sencillo de principio a fin", "process.lead": "Tres pasos claros — sin sorpresas, sin presión, solo vidrio de calidad instalado a tiempo.",
+      "why.4.t": "Trabajo de Calidad", "why.4.d": "Instalación limpia y precisa, respaldada por experiencia práctica, bien hecho desde la primera vez.",
+      "process.eyebrow": "Cómo Funciona", "process.title": "Sencillo de principio a fin", "process.lead": "Tres pasos claros, sin sorpresas, sin presión, solo vidrio de calidad instalado a tiempo.",
       "process.1.t": "Solicita una Cotización", "process.1.d": "Contáctanos por teléfono, correo o el formulario y cuéntanos qué necesitas. Respondemos en menos de 24 horas.",
       "process.2.t": "Medición y Estimado", "process.2.d": "Evaluamos tu espacio, tomamos medidas precisas y te damos un estimado claro y honesto.",
-      "process.3.t": "Instalación Experta", "process.3.d": "Nuestro equipo instala tu vidrio de forma limpia y a tiempo — y deja tu espacio impecable.",
+      "process.3.t": "Instalación Experta", "process.3.d": "Nuestro equipo instala tu vidrio de forma limpia y a tiempo, y deja tu espacio impecable.",
       "faq.eyebrow": "Bueno Saber", "faq.title": "Preguntas frecuentes",
-      "faq.q1": "¿Qué áreas atienden?", "faq.a1": "Estamos comenzando en Indianapolis, IN y atendiendo las áreas cercanas. Nuestras raíces familiares están en El Paso y Las Cruces, con planes de expandirnos allí en el futuro.",
+      "faq.q1": "¿Qué áreas atienden?", "faq.a1": "Estamos comenzando en Indianapolis, IN y atendiendo las áreas cercanas. Nuestras raíces familiares y más de 25 años de experiencia provienen de Texas.",
       "faq.q2": "¿Ofrecen estimados gratis?", "faq.a2": "Sí. Cada cotización es gratis y sin compromiso. Envíanos los detalles de tu proyecto y te responderemos en menos de 24 horas.",
-      "faq.q3": "¿Atienden proyectos residenciales y comerciales?", "faq.a3": "Por supuesto. Desde ventanas, espejos y duchas a medida hasta vidrio comercial, fachadas de aluminio y cierrapuertas — cubrimos toda la gama.",
-      "faq.q4": "¿Hablan español?", "faq.a4": "Sí — somos completamente bilingües. Puedes trabajar con nosotros en inglés o español en cada paso, desde la primera llamada hasta la instalación final.",
+      "faq.q3": "¿Atienden proyectos residenciales y comerciales?", "faq.a3": "Por supuesto. Desde ventanas, espejos y duchas a medida hasta vidrio comercial, fachadas de aluminio, muros cortina, cierrapuertas y umbrales, cubrimos toda la gama.",
+      "faq.q4": "¿Hablan español?", "faq.a4": "Sí, somos completamente bilingües. Puedes trabajar con nosotros en inglés o español en cada paso, desde la primera llamada hasta la instalación final.",
       "faq.q5": "¿Qué tan rápido responden?", "faq.a5": "Respondemos a cada solicitud de cotización en menos de 24 horas. Para reparaciones urgentes o vidrio roto, llámanos directamente y haremos lo posible por ayudarte de inmediato.",
       "quote.eyebrow": "Estimado Gratis", "quote.title": "Solicita una cotización",
       "quote.sub": "Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas con un estimado claro y honesto.",
-      "quote.perk1": "Estimados gratis y sin compromiso", "quote.perk2": "Proyectos residenciales y comerciales", "quote.perk3": "Servicio bilingüe — Inglés y Español",
+      "quote.perk1": "Estimados gratis y sin compromiso", "quote.perk2": "Proyectos residenciales y comerciales", "quote.perk3": "Servicio bilingüe, Inglés y Español",
       "quote.name": "Nombre Completo", "quote.namePh": "Juana Pérez", "quote.errName": "Por favor ingresa tu nombre.",
       "quote.phone": "Teléfono", "quote.phonePh": "(317) 555-0123", "quote.errPhone": "Ingresa un teléfono válido.",
       "quote.email": "Correo", "quote.emailPh": "juana@correo.com", "quote.errEmail": "Ingresa un correo válido.",
@@ -1238,8 +1238,9 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
       "quote.successT": "¡Gracias!", "quote.successP": "Hemos recibido tu solicitud y te responderemos en menos de 24 horas.",
       "quote.successCall": "Llámanos Ahora", "quote.successEmail": "Escríbenos",
       "contact.eyebrow": "Contáctanos", "contact.title": "Hablemos de tu vidrio",
+      "contact.personK": "Contacto", "contact.personV": "Sergio",
       "contact.phoneK": "Teléfono", "contact.emailK": "Correo", "contact.areaK": "Área de Servicio", "contact.areaV": "Indianapolis, IN y áreas cercanas",
-      "contact.hoursK": "Horario", "contact.hoursV": "Lun–Vie 8:30 AM – 5:00 PM",
+      "contact.hoursK": "Horario", "contact.hoursV": "Lun–Sáb 8:30 AM – 5:00 PM",
       "footer.tag": "Calidad en vidrio, de principio a fin.",
       "footer.explore": "Explorar", "footer.services": "Servicios", "footer.contact": "Contacto",
       "footer.rights": "Todos los derechos reservados.", "footer.motto": "Diseñado con claridad. Construido para durar."
